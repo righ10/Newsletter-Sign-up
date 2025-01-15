@@ -22,7 +22,7 @@ const handleSubmit=function(e){
         
     }else{
         container.style.display = "none"
-        success.style.display = "flex"
+        success.style.display = "block"
     }
     
 }
