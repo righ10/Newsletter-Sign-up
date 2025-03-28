@@ -1,0 +1,155 @@
+
+
+:root{
+    --Tomato: hsl(4, 100%, 67%);
+    /*NEUTRAL COLOR */
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+    --font-text:"Roboto";
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Dark-Slate-Grey);
+    
+
+}
+.container{
+    width: 780px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex: 40%;
+    padding: 15px;
+    background-color:var(--White);
+    
+    
+    
+}
+
+.details{
+    
+    padding: 40px 15px;
+    width: 320px;
+
+}
+.details >.header> h1{
+    font-size: 3rem;
+    padding: 10px 0px;
+    color: var(--Dark-Slate-Grey);
+}
+.header p{
+    padding: 10px 0;
+    color: var(--Charcoal-Grey);
+}
+
+.offerItems{
+
+    padding: 10px 0px;
+    color: var(--Dark-Slate-Grey);
+    font-size: .9rem;
+}
+
+.emailLabel{
+    padding-top: 10px;
+    font-weight: 700;
+
+}
+.formEl{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.formEl p {
+    color: red;
+    padding-top: 10px;
+}
+
+.email{
+    width: 300px;
+    height: 40px;
+    padding: 0 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: var(--Charcoal-Grey);
+    border:1px solid var(--Grey);
+    
+}
+.email:focus{
+    border: none;
+    outline: 1px solid var(--Charcoal-Grey);
+    
+}
+.formBtn{
+    color:var(--White);
+    background-color: var(--Dark-Slate-Grey);
+    border: none;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+}
+.formBtn:hover{
+    background-image:linear-gradient(to right,hsl(4, 96%, 71%),hsl(4, 93%, 49%)) ;
+}
+
+
+.sign-img{
+    float: right;
+    width: 70%;
+    
+    padding-left: 30px;
+    
+}
+.subscribed{
+    width: 300px;
+    padding:15px;
+    background-color: var(--White);
+    padding: 30px;
+    border-radius: 20px;
+}
+.subscribed img{
+    width: 30px;
+    padding-bottom: 15px;
+
+}
+.subscribed h2{
+    color:var(--Dark-Slate-Grey) ;
+    padding-bottom: 15px;
+}
+
+.subscribed p{
+    color: var(--Charcoal-Grey);
+    padding-bottom: 15px;
+}
+.subscribed button{
+    width: 240px;
+    height: 40px;
+    background-color: var(--Dark-Slate-Grey);
+    border: none;
+    color: var(--White);
+    font-weight: 500px;
+    border-radius: 10px;
+}
+.subscribed button:hover{
+    background-image: linear-gradient(to right,hsl(4, 96%, 71%),hsl(4, 93%, 49%) );
+}
+@media (max-width:840px){
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+
+    .sign-img{
+        content: url("./assets/image/illustration-sign-up-mobile.svg");
+    }
+}
