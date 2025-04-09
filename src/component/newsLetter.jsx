@@ -16,9 +16,9 @@ import SubCard from "./subCard";
         <>
         {emailSharing === ""?(
             
-            <SubCard emailSharing={emailSharing} setEmailSharing={setEmailSharing}/>
+            <Success emailSharing={emailSharing} setEmailSharing={setEmailSharing}/>
       ):
-      (<Success emailSharing={emailSharing} setEmailSharing={setEmailSharing}/>)}
+      (<SubCard emailSharing={emailSharing} setEmailSharing={setEmailSharing}/>)}
           
         </>
     )
