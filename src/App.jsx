@@ -1,4 +1,4 @@
-import NewsLetter from './component/NewsLetter'
+import NewsLetter from './component/newsLetter'
 import './App.css'
 
 function App(){
