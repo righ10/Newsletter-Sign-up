@@ -58,7 +58,7 @@ setEmailSharing(info.email)
             />
             
         
-        <button type="submit" className="formBtn">Subscribe to monthly newsletter</button>
+        <button type="submit" className="formBtn" onClick={() => emailSharing(!emailSharing) }>Subscribe to monthly newsletter</button>
         </form>
         
     </div>
